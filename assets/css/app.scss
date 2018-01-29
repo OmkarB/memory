@@ -2,5 +2,24 @@
 
 @import "bootstrap";
 
+.box  {
+  padding: 8em;
+  text-align: center;
+  border: 1.5px solid;
+}
+
 .side { padding: 4ex; text-align: center; }
 h1 { text-align: center; }
+
+.square { width: 50px; height: 50px; }
+
+.hidden {
+    display: none;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+
+
