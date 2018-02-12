@@ -6,7 +6,6 @@ defmodule Memory.Game do
 			moveOne: -1,
 			moveTwo: -1,
 			matched: [],
-			wait: false,
 			cards: shuffle_cards()
 		}
 	end
@@ -18,7 +17,6 @@ defmodule Memory.Game do
 			cards: game.cards,
 			moveOne: game.moveOne,
 			moveTwo: game.moveTwo,
-			wait: game.wait,
 			matched: game.matched
 		}
 	end
@@ -36,7 +34,6 @@ defmodule Memory.Game do
 					clicks: game.clicks + 1,
 					moveOne: idx,
 					matched: game.matched,
-					wait: false,
 					cards: game.cards,
 					moveTwo: game.moveTwo
 				}
@@ -46,7 +43,6 @@ defmodule Memory.Game do
 					moveOne: game.moveOne,
 					moveTwo: idx,
 					matched: game.matched,
-					wait: false,
 					cards: game.cards
 
 				}
