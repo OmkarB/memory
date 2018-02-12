@@ -1,8 +1,5 @@
-<h1>Memory Game</h1>
-
-<div id="game">
-  Loading...
+<div>
+  <h1 id="index-page">Join a Game</h1>
+  <input type="text" id="socket"/>
+  <button onclick="window.location.replace(window.location.origin + '/game/' + document.getElementById('socket').value)">Join</button>
 </div>
-
-
-
