@@ -10,7 +10,9 @@
     <title>Hello Memory!</title>
     <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
   </head>
-
+  <script>
+    window.userToken = "MEMORY"
+  </script>
   <body>
     <div class="container">
       <%= if get_flash(@conn, :info) || get_flash(@conn, :error) do %>
